@@ -18,7 +18,7 @@ Creates object instance of the class
 - `redis_uri` - URI for Redis connection. Ignored if the `redis` argument is also given.
 - `redis` - Redis client object (must be compatible with [Mojo::Redis2](https://metacpan.org/pod/Mojo%3A%3ARedis2)). This argument will override the `redis_uri` argument.
 - `timeout` - Request timeout, in seconds. If not set, uses the environment variable `RPC_QUEUE_RESPONSE_TIMEOUT`, or defaults to 30
-- `queue_separation_enabled` - Boolean to specify if messages should be assigned to different queus based on their `msg_group` or only `general` queue.
+- `queue_separation_enabled` - Boolean to specify if messages should be assigned to different queus based on their`category or only `general` queue.
 - `category_timeout_config` - A hash containing the timeout value for each request category.
 
         { general => 5, other => 120 }
@@ -72,7 +72,7 @@ It takes the following arguments
     called only when there is an response from the remote call.
     - `before_call` arrayref of subroutines called before the request to the remote service is made.
     - `rpc_failure_cb` a subroutine reference to call if the remote call fails. Called with `Mojolicious::Controller`, the rpc\_response and `$req_storage`
-    - `msg_group` - if supplied, the message will be assigned to the Redis channel with the corresponding name. The _general_ channel will be used by default if either `$msg_type` is not provided or `queue_separation_enabled` is 0.
+    - `category - if supplied, the message will be assigned to the Redis channel with the corresponding name. The _general_ channel will be used by default if either `$msg_type` is not provided or `queue_separation_enabled` is 0.
 
 Returns undef.
 
