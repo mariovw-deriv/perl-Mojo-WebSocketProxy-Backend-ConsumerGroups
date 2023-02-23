@@ -33,7 +33,7 @@ no_index:
 provides:
   Mojo::WebSocketProxy::Backend::ConsumerGroups:
     file: lib/Mojo/WebSocketProxy/Backend/ConsumerGroups.pm
-    version: '0.02'
+    version: '0.03'
 requires:
   Data::UUID: '0'
   IO::Async::Loop::Mojo: '0'
@@ -54,7 +54,7 @@ resources:
   bugtracker: https://github.com/mariovw-deriv/perl-Mojo-WebSocketProxy-Backend-ConsumerGroups/issues
   homepage: https://github.com/mariovw-deriv/perl-Mojo-WebSocketProxy-Backend-ConsumerGroups
   repository: https://github.com/mariovw-deriv/perl-Mojo-WebSocketProxy-Backend-ConsumerGroups.git
-version: '0.02'
+version: '0.03'
 x_authority: cpan:DERIV
 x_contributors:
   - 'user <user@binary.com>'

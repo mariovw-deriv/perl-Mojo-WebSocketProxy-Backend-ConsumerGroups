@@ -18,7 +18,7 @@ use parent qw(Mojo::WebSocketProxy::Backend);
 
 no indirect;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 __PACKAGE__->register_type('consumer_groups');
 
@@ -293,7 +293,7 @@ Mojo::WebSocketProxy::Backend::ConsumerGroups - Class for communication with bac
 
 =head1 VERSION
 
-version 0.02
+version 0.03
 
 =head1 DESCRIPTION
 
